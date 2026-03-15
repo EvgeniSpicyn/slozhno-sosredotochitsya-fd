@@ -2,4 +2,135 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000028;
+  font-family: 'IBM Plex mono', sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  position: relative;
+  height: 100vh; 
+  min-height: 668px;
+  margin-block-end: 10px;
+}
+
+.decorated-zone:before, .decorated-zone:after {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.decorated-zone::before {
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  content: "";
+  border-inline-end: #ff0070 1px solid;
+  border-block-start: #ff0070 1px solid;
+  background-color: transparent;
+}
+
+.decorated-zone::after {
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  content: "";
+  border-inline-start: #ff0070 1px solid;
+  border-block-end: #ff0070 1px solid;
+}
+
+.header__decor-text {
+  position: absolute;
+  display: block;
+  width: 356px;
+  text-align: right;
+  margin-block-start: 11px;
+  font-size: 18px;
+  color: #ff0070;
+}
+
+.header__decor-text::after {
+  content: "";
+  display: inline-block;
+  text-align: center;
+  margin-left: 6px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ff0070;
+  filter: blur(2px);
+}
+
+.header__theme-menu {
+  justify-items: end;
+  align-items: center;
+  
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+  min-height: 98px;
+}
+
+.header__theme-menu-item {
+  height: 26px;
+}
+
+.header__theme-menu-button {
+  color: #ff0070;
+  text-transform: lowercase;
+  background-color: transparent;
+  margin-inline-end: 10px;
+  margin-block-start: 73px;
+  border: none;
+  font-size: 18px;
+  height: 26px;
+  width: 70px;
+  /* padding-block-end: 1px; */
+  /* line-height: 26px */
+} 
+
+.header__theme-menu-button_active {
+  /* outline: 1px solid #fff;
+  offset-block-start: 1px; */
+  border: #ff0070 1px solid;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  padding-block-start: 141px;
+  padding-inline-start: 10px;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-block-end: 53px;
+  justify-self: center;
+  align-self: center;
+;
+}
+
+.header__text {
+  display: inline;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 1.2px;
+  margin-inline: 10px 10px;
+  /* margin-block-end: 12px; */
+  justify-self: center;
+  align-self: center;
+}
+
+.title-decor {
+  color: #000028;
+  background-color: #FF0070;
+  margin-block-end: 65px;
 }
