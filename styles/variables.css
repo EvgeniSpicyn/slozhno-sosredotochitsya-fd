@@ -5,4 +5,5 @@
 :root {
   --bg-image: url("../images/cover-image-dark.png");
   --accent-color: #FF0070;
+  --decoration-zone_gap: clamp(10px, 2.65vw, 20px);
 }
