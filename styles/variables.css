@@ -4,6 +4,16 @@
 */
 :root {
   --bg-image: url("../images/cover-image-dark.png");
-  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --button-color: #ff0070;
+  --decorated-color:#ff0070;
+  --title-color: #db00ff;
+  --title-color-shadow:#ff0070;
+  --bg-title-decor: #ff0070;
+  --title-decor-color: #000028;
+  --section-title-color: #ff0070;
   --decoration-zone_inset: clamp(10px, 2.65vw, 20px);
+  --button-color-hover: rgba(255, 0, 112, 0.4);
+  --article-text-color: #f1b2ce;
+  --accent-color-link: #ff0070;
 }
