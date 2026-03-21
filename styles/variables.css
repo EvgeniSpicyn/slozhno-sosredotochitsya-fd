@@ -13,7 +13,7 @@
   --bg-title-decor: #ff0070;
   --title-decor-color: #000028;
   --section-title-color: #ff0070;
-  --decoration-zone_inset: clamp(10px, 2.65vw, 20px);
+  --decoration-zone-inset: clamp(10px, 2.65vw, 20px);
   --button-color-hover: rgb(255 0 112 / 0.4);
   --article-text-color: #f1b2ce;
   --accent-color-link: #ff0070;

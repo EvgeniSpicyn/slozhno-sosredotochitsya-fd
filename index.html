@@ -19,7 +19,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <p class="header__decor-text" aria-hidden="true">REC</p>
+      <span class="header__decor-text" aria-hidden="true">REC</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -52,10 +52,10 @@
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
     </header>
-    <content class="content">
+    <main class="main">
       <section class="section">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
-        <article-list class="article-list">
+        <div class="article-list">
           <article class="article">
             <h3 class="article__title_bold title-decor">Многозадачность</h3>
             <p class="article__text">
@@ -63,7 +63,7 @@
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
-              <a class="article__link">выяснили</a>, что мозгу тяжело
+              <a class="article__link" href="">выяснили</a>, что мозгу тяжело
               концентрироваться даже на двух делах одновременно. А когда в поле
               внимания попадает несколько важных задач, организм паникует и
               выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
@@ -83,13 +83,13 @@
               отвлекаешься, тем больше удовольствия получаешь.
             </p>
           </article>
-        </article-list>
+        </div>
       </section>
       <section class="section section_alternate">
         <h2 class="section__title section_alternate_title">
           Что снижает концентрацию внимания?
         </h2>
-        <article-list class="article-list article-list-alternate">
+        <div class="article-list article-list-alternate">
           <article class="article">
             <h3 class="article__title_bold title-decor">Концентрация</h3>
             <p class="article__text">
@@ -124,21 +124,21 @@
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
           </article>
-        </article-list>
+        </div>
       </section>
       <section class="section">
         <h2 class="section__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <article-list class="article-list">
-          <h3 class="article__title_bold title-decor">
+        <div class="article-list">
+          <h2 class="article__title_bold title-decor">
             5 простых (на самом деле не очень) советов
-          </h3>
+          </h2>
           <article class="article">
-            <h3 class="article__title_not-bold title-decor">
+            <h4 class="article__title_not-bold title-decor">
               Представьте небо и облака
-            </h3>
+            </h4>
             <p class="article__text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -151,7 +151,7 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="article__title_not-bold title-decor">Включите музыку</h3>
+            <h4 class="article__title_not-bold title-decor">Включите музыку</h4>
             <p class="article__text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -160,10 +160,10 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="article__title_not-bold title-decor">Прогуляйтесь</h3>
+            <h4 class="article__title_not-bold title-decor">Прогуляйтесь</h4>
             <p class="article__text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-              показал, что созерцание природы повышает концентрацию, в то время
+              <a class="article__link" href="">показал</a>, что созерцание природы повышает концентрацию, в то время
               как после просмотра городских пейзажей она наоборот понижается.
               Можно совместить прогулку с физическими упражнениями или бегом —
               так в мозг поступит ещё больше кислорода и он будет лучше
@@ -172,7 +172,7 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="article__title_not-bold title-decor">Хорошо ешьте</h3>
+            <h4 class="article__title_not-bold title-decor">Хорошо ешьте</h4>
             <p class="article__text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -181,7 +181,7 @@
             </p>
           </article>
           <article class="article">
-            <h3 class="article__title_not-bold title-decor">Читайте</h3>
+            <h4 class="article__title_not-bold title-decor">Читайте</h4>
             <p class="article__text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -189,7 +189,7 @@
               несколько часов и круто тренирует направленное внимание.
             </p>
           </article>
-        </article-list>
+        </div>
       </section>
       <section class="section gallery">
         <h3 class="article__title_bold title-decor">А можно в картинках?</h3>
@@ -197,6 +197,7 @@
           class="section__image"
           src="./images/sunset.png"
           alt="Закат солнца в горах"
+          loading="lazy"
         />
         <img
           class="section__image"
@@ -223,7 +224,7 @@
           loading="lazy"
         />
       </section>
-    </content>
+    </main>
     <footer class="footer decorated-zone">
       <h2 class="footer__title">focus</h2>
     </footer>
