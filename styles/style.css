@@ -225,8 +225,6 @@
   display: grid;
   height: 100vh;
   min-height: 668px;
-  /* margin-block: clamp(0.625rem, -0.568rem + 5.089vw, 1.875rem) 0; */
-  margin: clamp(0.625rem, -1.343rem + 8.397vw, 2.688rem) 0;
 }
 
 .footer__title {
